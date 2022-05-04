@@ -40,3 +40,21 @@
         </div>
     </header>
     <!--FIN DEL HEADER-->
+
+    <!--SCRIPT PARA EL MENU HAMBURGUESA-->
+<script>
+    const header_btn = document.querySelector(".header-btn")
+    const header_menu = document.querySelector(".header-menu")
+    const header_menu_dos = document.querySelector(".header-menu-dos")
+    header_btn.addEventListener("click", () => {
+        if (header_menu.style.display != "block"){
+            header_menu.style.display = "block"
+            header_menu_dos.style.display = "flex"
+        } else{
+            header_menu.style.display = "none"
+            header_menu_dos.style.display = "none"
+        }
+    })
+</script>
+</body>
+</html>
