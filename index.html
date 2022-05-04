@@ -41,6 +41,41 @@
     </header>
     <!--FIN DEL HEADER-->
 
+    <!--COMIENZO DEL MAIN-->
+    <main class="main_container">
+        <section class="img-principal">
+            <img src="/imagenesyiconos/Entrenamiento.png" alt="Imagen principal">
+        </section>
+
+        <section>
+            <h1>Sobre nosotros:</h1>
+            <p class="texto_sobrenosotros">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas delectus, quis dolorum nulla id dolor numquam ad, autem quae voluptate ipsa voluptates porro maxime beatae officia illo aliquid. Delectus quis adipisci, quos molestias voluptatibus libero, dolore reprehenderit maxime corporis nobis quas similique animi corrupti eius quisquam cum provident ea ducimus veniam? Distinctio sequi, beatae possimus, a omnis quidem quasi recusandae aspernatur, ut ullam nam quisquam aut. Cumque error molestiae delectus nulla quaerat ratione quisquam dicta libero ea, totam nisi odit aut veritatis voluptatum assumenda non? Aliquid praesentium iure consectetur, ipsam obcaecati blanditiis corporis aliquam, optio non quia omnis, quo quisquam natus. Esse exercitationem, incidunt ipsum iure saepe molestiae provident ullam repellendus porro ipsam enim odio neque vitae voluptas suscipit iste similique ea nemo perferendis dicta nobis eum sequi dolores? Veniam omnis quis temporibus sequi aliquid, fugiat consequatur voluptates dicta vel corporis officiis excepturi voluptas? Eius rem quaerat iure mollitia, architecto libero ducimus blanditiis, odit, quis sunt deleniti rerum sit amet autem commodi veritatis et? Commodi id itaque quo dolore voluptatum nostrum blanditiis saepe, nemo eveniet in odit soluta fugit libero ex facilis distinctio quibusdam nihil! Vero omnis quaerat eaque culpa expedita unde quos blanditiis provident doloribus quo accusamus delectus dolores dolor fugiat quae praesentium, quidem, ex nostrum deleniti iste quia voluptate natus? Quia quibusdam ea vero incidunt harum architecto voluptatibus quaerat perspiciatis dignissimos molestiae, inventore velit cum autem commodi a necessitatibus sapiente minus provident. Recusandae quis porro numquam laudantium adipisci optio beatae, dolores ullam, nobis a perspiciatis hic tempore quod ex sit rerum incidunt officiis sunt neque asperiores consequuntur dolorum. Aspernatur excepturi non delectus, necessitatibus, quibusdam magni sequi voluptatem et facere tempore minima hic qui natus illo incidunt! Pariatur nulla tempore ea, voluptate porro quo illo inventore provident, nihil itaque obcaecati asperiores sint. Rerum nesciunt laudantium error at corrupti nobis modi. Et perspiciatis enim error perferendis expedita incidunt? Voluptate voluptatum neque itaque nulla ipsum praesentium est veritatis quo aliquam debitis dolore, quis quam, non cum aspernatur, perferendis minus! Commodi possimus assumenda ipsa laudantium! Sapiente nesciunt adipisci tempore maiores ab provident atque laudantium. Minus, blanditiis odit atque beatae, autem, unde debitis omnis enim explicabo facere asperiores nesciunt reiciendis provident quia laboriosam dolores deserunt quidem pariatur tempora. Nulla eum id vitae ipsum necessitatibus fuga. Corrupti ullam deserunt, modi alias, maxime numquam laudantium sed fuga dignissimos aliquam veniam eligendi velit animi eveniet nobis molestias nam eos debitis. Qui ad modi sed aut rerum?</p>
+        </section>
+    </main>
+    <!--FIN DEL MAIN-->
+
+    <!--CONTACTOS-->
+    <footer id="contactos">
+        
+        <div>
+            <div>
+                <p class="encontranos">Encontranos en:</p>
+            </div>
+            
+            <ul class="links">
+                <li><a href="https://facebook.com" ><img src="/imagenesyiconos/fbico.png" alt="fb">Facebook</a></li>
+                <li><a href="https://instagram.com"><img src="/imagenesyiconos/InstagramIcono.ico" alt="ig">Instagram</a></li>
+                <li><a href="https://twitter.com" ><img src="/imagenesyiconos/TwitterIcono.ico" alt="tw">Twitter</a></li>
+            </ul>
+        </div>
+
+        <div class="logo-bajo"> 
+            <a href="#navegacion"><img src="/imagenesyiconos/logo.png" alt=""></a>
+        </div>
+
+        <div class="relleno"></div>
+
+    </footer>
 
 
 
@@ -66,7 +101,20 @@
 
 
 
-
-
+<!--SCRIPT PARA EL MENU HAMBURGUESA-->
+<script>
+    const header_btn = document.querySelector(".header-btn")
+    const header_menu = document.querySelector(".header-menu")
+    const header_menu_dos = document.querySelector(".header-menu-dos")
+    header_btn.addEventListener("click", () => {
+        if (header_menu.style.display != "block"){
+            header_menu.style.display = "block"
+            header_menu_dos.style.display = "flex"
+        } else{
+            header_menu.style.display = "none"
+            header_menu_dos.style.display = "none"
+        }
+    })
+</script>
 </body>
 </html>
