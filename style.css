@@ -193,7 +193,7 @@ a{
 /* COMIENZO DEL INDEX */
 
 main{
-    background-image: url("/imagenesyiconos/carbon_fibre.png");
+    background-image: url("./imagenesyiconos/carbon_fibre.png");
     padding: 1rem;
 }
 
